@@ -45,7 +45,7 @@ function drawEdge(node1, node2){
                 ctx.strokeStyle = 'rgba(0,0,0,.3)';
                 ctx.beginPath();
                 ctx.moveTo(node1.xCoord, node1.yCoord);
-                ctx.lineTo(node2.xCoord, node2.yCoord); //Fuck dealing with angles 
+                ctx.lineTo(node2.xCoord, node2.yCoord); 
                 ctx.stroke();
                 //Node1 is deselected, so redrawn. Node2 needs to be redrawn. 
                 ctx.clearRect(node2.xCoord-10, node2.yCoord-10, 20, 20);
@@ -109,7 +109,6 @@ function unDrawNode(selectedNode){
                 return;
             }
             else{
-                console.log("ran");
                 ctx.clearRect(selectedNode.xCoord-10, selectedNode.yCoord-10, 20, 20);
                 ctx.beginPath();
                 if(selectedGraph == graph1)
@@ -141,7 +140,7 @@ function unDrawEdge(node1, node2){
                 ctx.strokeStyle = 'white';
                 ctx.beginPath();
                 ctx.moveTo(node1.xCoord, node1.yCoord);
-                ctx.lineTo(node2.xCoord, node2.yCoord); //Fuck dealing with angles 
+                ctx.lineTo(node2.xCoord, node2.yCoord); 
                 ctx.stroke();
                 //Node1 is deselected, so redrawn. Node2 needs to be redrawn. 
                 ctx.clearRect(node2.xCoord-10, node2.yCoord-10, 20, 20);
@@ -211,7 +210,7 @@ function isoAnim(){
                         ctx.strokeStyle = 'black';
                         ctx.beginPath();
                         ctx.moveTo(graph1.nodes[i].xCoord, graph1.nodes[i].yCoord);
-                        ctx.lineTo(graph1.nodes[i].neighbors[j].xCoord, graph1.nodes[i].neighbors[j].yCoord); //Fuck dealing with angles 
+                        ctx.lineTo(graph1.nodes[i].neighbors[j].xCoord, graph1.nodes[i].neighbors[j].yCoord);
                         ctx.stroke();
                     }
                     ctx.beginPath();    
@@ -227,7 +226,7 @@ function isoAnim(){
                         ctx.strokeStyle = 'black';
                         ctx.beginPath();
                         ctx.moveTo(graph2.nodes[i].xCoord, graph2.nodes[i].yCoord);
-                        ctx.lineTo(graph2.nodes[i].neighbors[j].xCoord, graph2.nodes[i].neighbors[j].yCoord); //Fuck dealing with angles 
+                        ctx.lineTo(graph2.nodes[i].neighbors[j].xCoord, graph2.nodes[i].neighbors[j].yCoord); 
                         ctx.stroke();
                     }
                     ctx.beginPath();    
