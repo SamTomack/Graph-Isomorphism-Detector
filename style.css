@@ -1,0 +1,32 @@
+#circle{
+    opacity: .75;
+}
+
+#circleWrapper{
+    display: inline-block;
+    border-style: solid;
+}
+
+#isoButton{
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#switchButton{
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#morphButton{
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#resetButton{
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
